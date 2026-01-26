@@ -22,9 +22,8 @@ Crea una tabla con 10 servicios reales. Incluye enlace oficial y justifica respo
 Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
 
 ### Diagrama
-### Diagrama
 
-```mermaid
+
 graph TD
     U[Usuario / Navegador]
     CDN[CDN / Edge]
@@ -38,6 +37,7 @@ graph TD
     FE --> API
     API --> DB
     API --> ST
+
 
 
 ### Explicación (8–12 líneas)
