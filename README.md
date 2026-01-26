@@ -16,21 +16,46 @@ Crea una tabla con 10 servicios reales. Incluye enlace oficial y justifica respo
 | Google Workspace | Google | SaaS | https://workspace.google.com/ | Apps, infraestructura y mantenimiento | Gestión de usuarios y documentos |
 | Dropbox Business | Dropbox | SaaS | https://www.dropbox.com/business | Aplicación y almacenamiento cloud | Subida y gestión de archivos |
 
+---
 
 ## 🅱️ Tarea B — Funciones principales de cloud (arquitectura)
 Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
 
 ### Diagrama
-(Pega aquí el diagrama)
+```mermaid
+graph TD
+    U[Usuario / Navegador]
+    CDN[CDN / Edge]
+    FE[Frontend Web]
+    API[API Backend]
+    DB[(Base de Datos)]
+    ST[Storage de ficheros]
+
+    U --> CDN
+    CDN --> FE
+    FE --> API
+    API --> DB
+    API --> ST
+
 
 ### Explicación (8–12 líneas)
 (Describe el flujo front → API → BBDD/storage y dónde entra la cloud)
+El usuario accede a la aplicación web desde el navegador.
+La petición llega a la CDN, que entrega el contenido estático de forma rápida.
+El frontend se ejecuta en la cloud y muestra la interfaz.
+Cuando el usuario realiza una acción, el frontend llama a la API backend.
+La API se ejecuta en la cloud y procesa la lógica de negocio.
+Para datos estructurados consulta la base de datos cloud.
+Para archivos utiliza el servicio de almacenamiento cloud.
+La base de datos devuelve los datos a la API.
+La API responde al frontend.
+El frontend muestra el resultado al usuario final.
 
 ### Mapeo de funciones cloud a componentes (mínimo 3)
-- Procesamiento → …
-- Ejecución → …
-- Almacenamiento → …
-- Intercambio → … (opcional si ya tienes 3)
+- Procesamiento → Frontend web y API backend alojados en la cloud
+- Ejecución → API backend que ejecuta la lógica de negocio
+- Almacenamiento → Base de datos cloud y storage de ficheros
+- Intercambio → API REST y CDN para comunicación y entrega de contenidos
 
 ## 📚 Fuentes (enlaces oficiales)
 [(Enlaces oficiales usados en la tabla A y en la B)]
