@@ -42,6 +42,7 @@ graph TD
 
 ### Explicación (8–12 líneas)
 (Describe el flujo front → API → BBDD/storage y dónde entra la cloud)
+
 El usuario accede a la aplicación web desde el navegador.
 La petición llega a la CDN, que entrega el contenido estático de forma rápida.
 El frontend se ejecuta en la cloud y muestra la interfaz.
