@@ -33,7 +33,8 @@ Incluye un diagrama (ASCII/Mermaid/imagen) y una explicación breve.
 - Intercambio → … (opcional si ya tienes 3)
 
 ## 📚 Fuentes (enlaces oficiales)
-[(Enlaces oficiales usados en la tabla A y en la B)](
+[(Enlaces oficiales usados en la tabla A y en la B)]
+
 https://aws.amazon.com/ec2/
 
 https://cloud.google.com/compute
