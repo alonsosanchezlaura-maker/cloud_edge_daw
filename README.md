@@ -26,16 +26,19 @@ https://aws.amazon.com/what-is/edge-computing/
 
 ## 🅳 Tarea D — Fog vs Mist (niveles y zonas de aplicación)
 **Definición Fog (2–4 líneas):**
+
 Fog Computing es una capa intermedia entre el edge y la cloud.
 Se sitúa normalmente en gateways, routers o servidores locales.
 Permite coordinar varios dispositivos edge y procesar datos antes de enviarlos a la nube.
 
 **Definición Mist (2–4 líneas):**
+
 Mist Computing lleva el procesamiento al nivel más bajo posible: el propio dispositivo o sensor.
 Realiza microdecisiones muy simples con recursos mínimos.
 Es ideal para respuestas ultrarrápidas y funcionamiento incluso sin conexión.
 
 **Esquema (ASCII o Mermaid recomendado):**
+
 [ Sensor / Dispositivo ]
            ↓
          Mist
@@ -57,18 +60,26 @@ Es ideal para respuestas ultrarrápidas y funcionamiento incluso sin conexión.
 ## 🅴 Tarea E — Ventajas de la Cloud en sistemas conectados
 Incluye mínimo 3 ventajas (recomendado 5), con explicación + ejemplo.
 
-1) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+1) Ventaja: Escalabilidad
+   Explicación: la cloud permite aumentar o reducir recursos según la demanda sin cambiar hardware.
+   Ejemplo: una plataforma IoT gestiona miles de sensores nuevos sin modificar la infraestructura local.
 
-2) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
+2) Ventaja: Almacenamiento masivo
+   Explicación: la nube almacena grandes volúmenes de datos históricos de forma segura.
+   Ejemplo: guardar años de datos de sensores para análisis energético o predicción de fallos.
 
-3) Ventaja: ...
-   Explicación: ...
-   Ejemplo: ...
-
+3) Ventaja: Alta disponibilidad
+   Explicación: los servicios cloud están replicados y siguen funcionando ante fallos.
+   Ejemplo: una app de monitorización sigue accesible aunque caiga un servidor.
+   
+4) Analítica avanzada e IA
+   Explicación: la cloud ofrece herramientas potentes de análisis y machine learning.
+   Ejemplo: entrenar modelos que predicen averías usando datos enviados desde el edge.
+   
+5) Gestión centralizada
+   Explicación: permite controlar, actualizar y supervisar dispositivos desde un único punto.
+   Ejemplo: actualizar el software de miles de dispositivos IoT remotamente.
+   
 **Fuente oficial (mín. 1):**
 - ...
 
